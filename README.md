@@ -2,4 +2,4 @@
 
 
 
-![Main Screen](Documentation/mian.png)
+![Main Screen](Documentation/main.png)
