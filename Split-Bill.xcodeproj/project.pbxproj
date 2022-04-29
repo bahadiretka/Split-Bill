@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		79AE006B281A8A77006854FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE006A281A8A77006854FC /* AppDelegate.swift */; };
 		79AE006D281A8A77006854FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE006C281A8A77006854FC /* SceneDelegate.swift */; };
-		79AE006F281A8A77006854FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE006E281A8A77006854FC /* ViewController.swift */; };
+		79AE006F281A8A77006854FC /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE006E281A8A77006854FC /* InputViewController.swift */; };
 		79AE0072281A8A77006854FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79AE0070281A8A77006854FC /* Main.storyboard */; };
 		79AE0074281A8A79006854FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79AE0073281A8A79006854FC /* Assets.xcassets */; };
 		79AE0077281A8A79006854FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79AE0075281A8A79006854FC /* LaunchScreen.storyboard */; };
+		79AE0083281B4D93006854FC /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE0082281B4D93006854FC /* Bill.swift */; };
+		79B87A09281B4E2F0087F58E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B87A08281B4E2F0087F58E /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		79AE0067281A8A77006854FC /* Split-Bill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Split-Bill.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79AE006A281A8A77006854FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79AE006C281A8A77006854FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		79AE006E281A8A77006854FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79AE006E281A8A77006854FC /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		79AE0071281A8A77006854FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79AE0073281A8A79006854FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79AE0076281A8A79006854FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79AE0078281A8A79006854FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79AE0082281B4D93006854FC /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		79B87A08281B4E2F0087F58E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				79AE006A281A8A77006854FC /* AppDelegate.swift */,
 				79AE006C281A8A77006854FC /* SceneDelegate.swift */,
-				79AE006E281A8A77006854FC /* ViewController.swift */,
-				79AE0070281A8A77006854FC /* Main.storyboard */,
+				79AE0084281B4D9E006854FC /* Model */,
+				79AE007E281B4CE6006854FC /* View */,
+				79AE007F281B4CF0006854FC /* Controller */,
 				79AE0073281A8A79006854FC /* Assets.xcassets */,
 				79AE0075281A8A79006854FC /* LaunchScreen.storyboard */,
 				79AE0078281A8A79006854FC /* Info.plist */,
 			);
 			path = "Split-Bill";
+			sourceTree = "<group>";
+		};
+		79AE007E281B4CE6006854FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79AE0070281A8A77006854FC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79AE007F281B4CF0006854FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				79AE006E281A8A77006854FC /* InputViewController.swift */,
+				79B87A08281B4E2F0087F58E /* ResultViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		79AE0084281B4D9E006854FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79AE0082281B4D93006854FC /* Bill.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79AE006F281A8A77006854FC /* ViewController.swift in Sources */,
+				79B87A09281B4E2F0087F58E /* ResultViewController.swift in Sources */,
+				79AE0083281B4D93006854FC /* Bill.swift in Sources */,
+				79AE006F281A8A77006854FC /* InputViewController.swift in Sources */,
 				79AE006B281A8A77006854FC /* AppDelegate.swift in Sources */,
 				79AE006D281A8A77006854FC /* SceneDelegate.swift in Sources */,
 			);
