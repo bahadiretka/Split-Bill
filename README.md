@@ -1,5 +1,13 @@
 # Split-Bill
 
-[[Documentation/main.png|width=400px]]
+## default main view
+
+![Inputted Screen](Documentation/main.png)
+
+## entered some input
+
 ![Inputted Screen](Documentation/inputted.png)
+
+## result view
+
 ![Calculated Screen](Documentation/calculated.png)
